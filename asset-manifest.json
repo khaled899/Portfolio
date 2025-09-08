@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.cd5e7e28.css",
+    "main.js": "/Portfolio/static/js/main.a97eaf0b.js",
+    "static/media/Protax.png": "/Portfolio/static/media/Protax.b80be4c33ca9a501df78.png",
+    "static/media/Alphadoor.png": "/Portfolio/static/media/Alphadoor.ee65728498ad34870ce5.png",
+    "static/media/Egipto.png": "/Portfolio/static/media/Egipto.4f38e56009c215d0119f.png",
+    "static/media/hydeparkdevelopments.png": "/Portfolio/static/media/hydeparkdevelopments.2b71ed5ae4c572eecda2.png",
+    "static/media/Trivage.png": "/Portfolio/static/media/Trivage.60713c57e2b89f25c86e.png",
+    "static/media/ELkhbaz.png": "/Portfolio/static/media/ELkhbaz.43ad8dd39e57da37687a.png",
+    "static/media/X-work.png": "/Portfolio/static/media/X-work.f97a8cc24c5a545109dc.png",
+    "static/media/Paralex.png": "/Portfolio/static/media/Paralex.099a83e4e36ea5ee6e3f.png",
+    "static/media/bassamalkhouri.png": "/Portfolio/static/media/bassamalkhouri.48bdc0a1c9eea50c48a2.png",
+    "static/media/G-clinic.png": "/Portfolio/static/media/G-clinic.79bc2904bb8bfa26899c.png",
+    "static/media/Games.png": "/Portfolio/static/media/Games.06a3a7c63330377da31c.png",
+    "static/media/Altamawy.png": "/Portfolio/static/media/Altamawy.2dceaf9b4b1c3540fe4f.png",
+    "static/media/Wasad.png": "/Portfolio/static/media/Wasad.27cbb37b5d012871357d.png",
+    "static/media/Accountant.png": "/Portfolio/static/media/Accountant.b609a9bc776906aa6d57.png",
+    "static/media/Auto station.png": "/Portfolio/static/media/Auto station.00b3850b67d37d94f7df.png",
+    "static/media/Valero.png": "/Portfolio/static/media/Valero.4b8be4f1e846cd158d83.png",
+    "static/media/Hi5.png": "/Portfolio/static/media/Hi5.2f8b96cf8d00ab7d930a.png",
+    "static/media/amit.png": "/Portfolio/static/media/amit.1337cfcebf56a757cbbb.png",
+    "static/media/Education.png": "/Portfolio/static/media/Education.cb52ff134e361a85154d.png",
+    "static/media/course.png": "/Portfolio/static/media/course.d5c89538d24e198d7384.png",
+    "static/media/Ella.png": "/Portfolio/static/media/Ella.45477aa2ec1b1f2a2b30.png",
+    "static/media/Fagas.png": "/Portfolio/static/media/Fagas.527bbba8a6c904baab8c.png",
+    "static/media/khaled2.jpeg": "/Portfolio/static/media/khaled2.4a625511ab05c32830a8.jpeg",
+    "static/media/CV.pdf": "/Portfolio/static/media/CV.d3d04bdb7aa16dead907.pdf",
+    "static/media/portfolio3.jpg": "/Portfolio/static/media/portfolio3.b8cadb4e69e6fd0453da.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.cd5e7e28.css.map": "/Portfolio/static/css/main.cd5e7e28.css.map",
+    "main.a97eaf0b.js.map": "/Portfolio/static/js/main.a97eaf0b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd5e7e28.css",
+    "static/js/main.a97eaf0b.js"
+  ]
+}
