@@ -1,0 +1,61 @@
+nav  {
+    
+
+    width: max-content;
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 3rem;
+    backdrop-filter: blur(5px);
+    position: fixed;
+}
+
+
+#dark nav {
+    background: rgba(255, 255, 255, 0.3);
+}
+#light nav {
+    background: rgba(0, 0, 0, 0.3);
+}
+nav a {
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+
+    font-size: 1.1rem;
+}
+#dark nav a {
+    color: var(--text-dark-content);
+}
+#light nav a {
+    color: var(--text-light-content);
+}
+
+#dark nav a:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+
+}
+#light nav a:hover {
+
+    background: rgba(255, 255, 255, 0.3);
+
+}
+#dark nav a.active{
+
+    background: var(--dark-pure);
+    color: var(--text-dark-content);
+    
+}
+#light nav a.active{
+
+    background: var(--light-pure);
+    color: var(--text-light-content);
+    
+}

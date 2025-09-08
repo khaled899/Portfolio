@@ -1,0 +1,235 @@
+/* start global rules */ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-bg: #2c2d30;
+    --color-bg-variant: #252628;
+    --color-primary: #5f56e2 ;
+    --color-primary-variant: #948eeb;
+    --color-white: #fff;
+    --color-light:rgba(255,255,255,0.6);
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+
+    --main-transition: all 400ms ease;
+
+    /* Dark Mode */
+    --primary-dark: #948eeb;
+    --variant-dark: #5f56e2;
+    --dark-pure: #121212;
+    --dark-variant: #383838;
+    --text-dark-title : #FAFAFA;
+    --text-dark-content: #ffffff99;
+    /* Light Mode */ 
+    --variant-light: #948eeb;
+    --primary-light: #5f56e2;
+    --light-variant: #CFCFCF;
+    --light-pure : #F7F7F7;
+    --text-light-title : #212121;
+    --text-light-content: #616161;
+}   
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    position: relative;
+    
+}
+/* #dark body {
+    background: red;
+    color: var(--text-dark-content);
+}
+#light body {
+    background: var(--light-pure);
+    color: var(--text-light-content);
+} */
+#dark {
+    background: var(--dark-pure);
+    background-image: url(assets/bg-texture.png);
+}
+#light {
+    background: var(--light-pure);
+}
+#dark span {
+    color: var(--primary-dark);
+}
+#light span {
+    color: var(--primary-light);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+h1 {
+    font-size: 2.5rem;
+}
+section {
+    margin-top: 8rem;
+    
+}
+#dark section > h2, section > h5 {
+    text-align: center;
+    color : var(--text-dark-title);
+}
+#dark section > h2 {
+    color: var(--primary-dark);
+    margin-bottom: 3rem;
+}
+#dark .text-light {
+
+    color: var(--text-dark-title);
+}
+#light section > h2, section > h5 {
+    text-align: center;
+    color : var(--text-light-title);
+}
+#light section > h2 {
+    color: var(--primary-light);
+    margin-bottom: 3rem;
+}
+#light .text-light {
+
+    color: var(--text-light-title);
+}
+#dark a {
+    color: var(--primary-dark) ;
+    transition: var(--main-transition);
+}
+#dark a:hover {
+    color: var(--text-dark-title);
+    
+}
+#light a {
+    color: var(--primary-light) ;
+    font-weight: 400;
+    transition: var(--main-transition);
+}
+#light a:hover {
+    color: var(--text-light-title);
+    
+}
+/* start btn */
+#light .btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--primary-light);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-light);
+    transition: var(--main-transition);
+}
+#light .btn:hover {
+    background: var(--light-variant);
+    color: var(--primary-light);
+    border-color: transparent;
+}
+#light .btn-primary {
+    background: var(--primary-light);
+    color: var(--light-pure);
+}
+#dark .btn {
+    width: max-content;
+    display: inline-block;
+    color: var(--primary-dark);
+    padding: 0.75rem 1.2rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    border: 1px solid var(--primary-dark);
+    transition: var(--main-transition);
+}
+#dark .btn:hover {
+    background: var(--dark-variant);
+    color: var(--light-variant);
+    border-color: transparent;
+}
+#dark .btn-primary {
+    background: var(--primary-dark);
+    color: var(--dark-pure);
+}
+
+/* Toggle Dark Mode */
+.switch {
+
+    width: 5.5rem;
+    position: fixed;
+    top: 0;
+    right: 0.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.mode {
+    width: 1.5rem;
+}
+.switch label {
+    font-size: 0.65rem;
+}
+#dark .switch label {
+    color: #fff;
+}
+#light circle {
+    fill: #FDB813;
+}
+#light .mode {
+    color: #FDB813;
+}
+
+
+/* end btn */
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+/* media queries medium scrren  */
+@media (max-width:1024px) {
+    .container {
+        width: var(--container-width-md);
+    }
+    section {
+        margin-top: 6rem;
+    }
+
+    .switch label {
+        opacity: 0 ;
+    }
+}
+/* media queries small scrren  */
+@media (max-width:600px) {
+    .container {
+        width: var(--container-width-ms);
+    }
+    section > h2 {
+        margin-top: 2rem;
+    }
+    .switch label{
+        opacity: 0;
+    }
+}
+/* end global rules */ 

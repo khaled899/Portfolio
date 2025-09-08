@@ -1,0 +1,131 @@
+.container.contact-container {
+    width: 58%;
+    display: grid;
+    grid-template-columns: 30% 50%;
+    gap: 12%;
+    padding-bottom: 4rem;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.contact-option {
+    
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--main-transition);
+}
+#dark .contact-option {
+    background: var(--dark-variant);
+}
+#light .contact-option {
+    background: var(--light-variant)
+}
+#dark .contact-option:hover {
+    background: transparent;
+    border-color: var(--primary-dark);
+}
+#light .contact-option:hover {
+    background: transparent;
+    border-color: var(--primary-light);
+}
+.contact-option .icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+#dark .contact-option .icon {
+    color: var(--text-dark-title);
+}
+#light .contact-option .icon {
+    color: var(--text-light-title);
+}
+#dark .contact-option h4 {
+    color: var(--text-dark-title);
+}
+#light .contact-option h4 {
+    color: var(--text-light-title);
+}
+#dark .contact-option h5 {
+    color: var(--text-dark-content);
+}
+#light .contact-option h5 {
+    color: var(--text-light-content);
+}
+
+.contact-option a {
+    margin-top: 0.7rem;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+#dark .contact-option a {
+    color: var(--primary-dark);
+}
+#light .contact-option a {
+    color: var(--primary-light);
+}
+#dark .contact-option a:hover {
+    color: var(--text-dark-content);
+}
+#light .contact-option a:hover {
+    color: var(--text-light-content);
+}
+
+
+form {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    resize: none;
+}
+#dark input, textarea {
+    border: 2px solid var(--primary-dark);
+    color: var(--text-dark-title);
+
+}
+#light input, textarea {
+    border: 2px solid var(--primary-dark);
+    color: var(--text-light-title);
+}
+
+/* media queries medium devices */ 
+
+@media screen and (max-width: 1024px) {
+    .container.contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    form {
+        padding-top: 0;
+    }
+}
+
+.feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: green;
+}
+
+.feedback.error {
+  color: red;
+}
+
+/* media queries small devices */ 
+
+@media screen and (max-width: 600px) {
+    .container.contact-container {
+        width: var(--container-width-sm) ;
+    }
+}

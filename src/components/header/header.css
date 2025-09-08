@@ -1,0 +1,134 @@
+header {
+    padding-top: 7rem ;
+    overflow: hidden;
+    background: var(--color-bg-variant);
+}
+#light header {
+    background: var(--light-pure);
+}
+#dark header {
+    background: var(--dark-pure);
+}
+#light h5 {
+    color:var(--text-light-content);
+}
+#light h1 {
+    color:var(--text-light-title);
+}
+#dark h5 {
+    color:var(--text-dark-content);
+}
+#dark h1 {
+    color:var(--text-dark-title);
+}
+
+.header-container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* CTA */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+/* Social */
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+
+}
+.header-socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ME */
+
+.me {
+    width: 22rem;
+    height: 20rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 4rem;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 0 1.5rem;
+}
+#dark .me {
+    background: linear-gradient(var(--dark-variant),transparent);
+}
+#light .me {
+    background: linear-gradient(var(--light-variant),transparent);
+}
+.me img {
+    height: 25rem;
+    /* transition: var(--main-transition); */
+}
+/* .photo-one {
+    opacity: 0;
+}
+img .photo-two {
+    opacity: 1; 
+} */
+/* .me img:hover.photo-two {
+    opacity: 0;
+} */
+/* .me img:hover.photo-one {
+    opacity: 1;
+} */
+.figure {
+    position: relative;
+    max-width: 100%;
+    
+}
+    .figure img.image-hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .4s;
+}
+    .figure:hover img.image-hover {
+    opacity: 1;
+    transition: opacity .4s;
+}
+.figure:hover img.image-main {
+    opacity: 0;
+    transition: opacity .4s;
+}
+.image-main {
+    width: 17rem;
+    padding-left: 1rem;
+}
+
+/* social down */ 
+.scroll-down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+
+}
+
+/* media queries medium devices */ 
+
+
+/* media queries small devices */ 
+
